@@ -209,7 +209,7 @@ def delete_game(game_id):
 
     return jsonify({"message": "Game deleted successfully", "id": game_id}), 200
         
+init_db()
 
 if __name__ == "__main__":
-        init_db()
         app.run(debug=True)
